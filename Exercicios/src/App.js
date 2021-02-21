@@ -1,6 +1,8 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 import First from './components/First';
+import CompDefault, {Comp1, Comp2} from './components/Multi';
+
 // function FirstText(){
 //     return <Text>First Component</Text>
 // }
@@ -16,7 +18,9 @@ import First from './components/First';
 
 export default () => (
   <View>
-    <Text> {1 + 1} </Text>
+    <CompDefault />
+    <Comp1 />
+    <Comp2 />
     <First />
   </View>
 );
