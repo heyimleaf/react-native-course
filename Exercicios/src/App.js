@@ -3,6 +3,7 @@ import {View, StyleSheet} from 'react-native';
 import First from './components/First';
 import CompDefault, {Comp1, Comp2} from './components/Multi';
 import MinMax from './components/MinMax';
+import Random from './components/Random';
 // function FirstText(){
 //     return <Text>First Component</Text>
 // }
@@ -22,6 +23,7 @@ export default () => (
     <Comp1 />
     <Comp2 />
     <First /> */}
+    <Random min={10} max={20}></Random>
     <MinMax min="3" max="20" />
     <MinMax min="1" max="10" />
   </View>
@@ -33,6 +35,6 @@ const style = StyleSheet.create({
     flexGrow: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 70,
+    padding: 20,
   },
 });
