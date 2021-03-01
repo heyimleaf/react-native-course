@@ -1,11 +1,13 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
+import Cont from './components/Cont';
+
 // import First from './components/First';
 // import CompDefault, {Comp1, Comp2} from './components/Multi';
 // import MinMax from './components/MinMax';
 // import Random from './components/Random';
 // import Title from './components/Title';
-import Button from './components/Button';
+// import Button from './components/Button';
 // function FirstText(){
 //     return <Text>First Component</Text>
 // }
@@ -21,7 +23,10 @@ import Button from './components/Button';
 
 export default () => (
   <View style={style.App}>
-    <Button />
+    <Cont initial={100} pass={10} />
+    <Cont />
+
+    {/* <Button /> */}
 
     {/* //   <CompDefault />
   //   <Comp1 />
