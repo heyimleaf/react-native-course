@@ -11,7 +11,7 @@ export default (props) => {
       title="Execute"
       onPress={function () {
         const n = generateNumber(props.min, props.max);
-        props.func(n);
+        props.func(n, 'O valor gerado foi: ');
       }}
     />
   );
