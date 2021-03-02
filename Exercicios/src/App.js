@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import Dad from './components/indirect/Dad';
+import ContV2 from './components/cont/ContV2';
+// import Dad from './components/indirect/Dad';
 // import Dad from './components/direct/Dad';
 
 // import Cont from './components/Cont';
@@ -26,9 +27,9 @@ import Dad from './components/indirect/Dad';
 
 export default () => (
   <View style={style.App}>
-    <Dad />
-
+    <ContV2></ContV2>
     {/* <Button /> 
+    <Dad />
     <Dad />
     <Cont initial={100} pass={10} />
     <Cont />

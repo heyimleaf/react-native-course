@@ -14,7 +14,6 @@ export default (props) => {
     <>
       <Text style={Style.txtL}>
         {text}
-
         {num}
       </Text>
       <Son min={1} max={60} func={showValue} />
