@@ -1,11 +1,10 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import ContV2 from './components/cont/ContV2';
+import Differentiate from './components/Differentiate';
+// import ContV2 from './components/cont/ContV2';
 // import Dad from './components/indirect/Dad';
 // import Dad from './components/direct/Dad';
-
 // import Cont from './components/Cont';
-
 // import First from './components/First';
 // import CompDefault, {Comp1, Comp2} from './components/Multi';
 // import MinMax from './components/MinMax';
@@ -22,13 +21,13 @@ import ContV2 from './components/cont/ContV2';
 
 // export default function(){
 //     return <Text>First Component</Text>
-
 // }
 
 export default () => (
   <View style={style.App}>
-    <ContV2></ContV2>
+    <Differentiate />
     {/* <Button /> 
+    <ContV2></ContV2>
     <Dad />
     <Dad />
     <Cont initial={100} pass={10} />
