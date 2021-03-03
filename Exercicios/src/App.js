@@ -1,6 +1,10 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
-import Differentiate from './components/Differentiate';
+import {StyleSheet, SafeAreaView} from 'react-native';
+import Family from './components/relation/Family';
+import Member from './components/relation/Member';
+
+// import OddEven from './components/OddEven';
+// import Differentiate from './components/Differentiate';
 // import ContV2 from './components/cont/ContV2';
 // import Dad from './components/indirect/Dad';
 // import Dad from './components/direct/Dad';
@@ -24,23 +28,34 @@ import Differentiate from './components/Differentiate';
 // }
 
 export default () => (
-  <View style={style.App}>
-    <Differentiate />
+  <SafeAreaView style={style.App}>
+    <Family>
+      <Member name="Luiz" lastname="Carlos" />
+      <Member name="Lucas" lastname="Silva" />
+    </Family>
+
+    <Family>
+      <Member name="João" lastname="Carlos" />
+      <Member name="Felipe" lastname="Silva" />
+    </Family>
+
     {/* <Button /> 
+    <OddEven num={3} />
+    <Differentiate />
     <ContV2></ContV2>
     <Dad />
     <Dad />
     <Cont initial={100} pass={10} />
     <Cont />
-    {/* //   <CompDefault />
-  //   <Comp1 />
-  //   <Comp2 />
-  //   <First />
-  //   <Random min={10} max={20}></Random>
-  //   <MinMax min="3" max="20" />
-  //   <MinMax min="1" max="10" /> 
-  // <Title main="Sign up" second="Sign screen" /> */}
-  </View>
+     <CompDefault />
+     <Comp1 />
+      <Comp2 />
+      <First />
+      <Random min={10} max={20}></Random>
+      <MinMax min="3" max="20" />
+      <MinMax min="1" max="10" /> 
+    <Title main="Sign up" second="Sign screen" /> */}
+  </SafeAreaView>
 );
 
 const style = StyleSheet.create({
