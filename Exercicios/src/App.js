@@ -1,8 +1,10 @@
 import React from 'react';
 import {StyleSheet, SafeAreaView} from 'react-native';
-import Family from './components/relation/Family';
-import Member from './components/relation/Member';
+import LoggedUser from './components/LoggedUser';
+import User from './components/LoggedUser';
 
+// import Family from './components/relation/Family';
+// import Member from './components/relation/Member';
 // import OddEven from './components/OddEven';
 // import Differentiate from './components/Differentiate';
 // import ContV2 from './components/cont/ContV2';
@@ -29,6 +31,10 @@ import Member from './components/relation/Member';
 
 export default () => (
   <SafeAreaView style={style.App}>
+    <LoggedUser user={{name: 'Luiz', email: 'jobs.lugui@gmail.com'}} />
+    <LoggedUser user={{name: '', email: 'asdas'}} />
+
+    {/* <Button /> 
     <Family>
       <Member name="Luiz" lastname="Carlos" />
       <Member name="Lucas" lastname="Silva" />
@@ -38,8 +44,6 @@ export default () => (
       <Member name="João" lastname="Carlos" />
       <Member name="Felipe" lastname="Silva" />
     </Family>
-
-    {/* <Button /> 
     <OddEven num={3} />
     <Differentiate />
     <ContV2></ContV2>
