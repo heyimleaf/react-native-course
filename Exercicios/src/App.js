@@ -1,9 +1,10 @@
 import React from 'react';
 import {StyleSheet, SafeAreaView} from 'react-native';
-import LoggedUser from './components/LoggedUser';
-import User from './components/LoggedUser';
-import ProductsListV2 from './components/products/ProductsListV2';
-
+import FlexboxV4 from './components/layout/FlexboxV4';
+// import TypeYourName from './components/TypeYourName';
+//import LoggedUser from './components/LoggedUser';
+//import User from './components/LoggedUser';
+//import ProductsListV2 from './components/products/ProductsListV2';
 //import ProductsList from './components/products/ProductsList';
 // import Family from './components/relation/Family';
 // import Member from './components/relation/Member';
@@ -33,9 +34,13 @@ import ProductsListV2 from './components/products/ProductsListV2';
 
 export default () => (
   <SafeAreaView style={style.App}>
-    <ProductsListV2 />
-
+    <FlexboxV4 />
     {/* <Button /> 
+    <FlexboxV3 />
+    <FlexboxV2 />
+    <FlexboxV1 />
+    <TypeYourName />
+    <ProductsListV2 />
     <ProductsList />
     <LoggedUser user={{name: 'Luiz', email: 'jobs.lugui@gmail.com'}} />
     <Family>
