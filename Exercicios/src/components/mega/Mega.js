@@ -17,7 +17,7 @@ export default class Mega extends Component {
         <TextInput
           placeholder="Numbers quantity"
           value={this.state.qtdNumbers}
-          onChangeText={this.changeQtdNum(qtd)}
+          onChangeText={(qtd) => this.changeQtdNum(qtd)}
         />
       </>
     );
