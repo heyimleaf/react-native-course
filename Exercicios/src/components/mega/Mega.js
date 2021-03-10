@@ -5,19 +5,24 @@ export default class Mega extends Component {
   state = {
     qtdNumbers: this.props.qtdNumbers,
   };
-
-  changeQtdNum(qtd) {
+  //   constructor(props) {
+  //     super(props);
+  //     this.changeQtdNum = this.changeQtdNum.bind(this);
+  //   }
+  changeQtdNum = (qtd) => {
     this.setState({qtdNumbers: qtd});
-  }
+  };
 
   render() {
     return (
       <>
         <Text>Mega-Sena Generator {this.state.qtdNumbers}</Text>
         <TextInput
+          keyboardType={'numeric'}
+          style={{borderBottomWidth: 1}}
           placeholder="Numbers quantity"
           value={this.state.qtdNumbers}
-          onChangeText={(qtd) => this.changeQtdNum(qtd)}
+          onChangeText={this.changeQtdNum}
         />
       </>
     );
