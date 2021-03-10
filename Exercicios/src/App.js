@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, SafeAreaView} from 'react-native';
-import FlexboxV4 from './components/layout/FlexboxV4';
+import Mega from './components/mega/Mega';
+// import FlexboxV4 from './components/layout/FlexboxV4';
 // import TypeYourName from './components/TypeYourName';
 //import LoggedUser from './components/LoggedUser';
 //import User from './components/LoggedUser';
@@ -34,8 +35,9 @@ import FlexboxV4 from './components/layout/FlexboxV4';
 
 export default () => (
   <SafeAreaView style={style.App}>
-    <FlexboxV4 />
+    <Mega qtdNumbers={7} />
     {/* <Button /> 
+    <FlexboxV4 />
     <FlexboxV3 />
     <FlexboxV2 />
     <FlexboxV1 />
